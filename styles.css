@@ -1,0 +1,188 @@
+/* General Reset for Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    text-align: center;
+    padding: 12px 25px;
+    background-color: #BCD9A0;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #4cae4c;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px 0; /* Ensure no extra space */
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #BCD9A0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('download.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Services Section */
+.service {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service i {
+    font-size: 40px;
+    color: #BCD9A0;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #888;
+}
+
+/* Contact Form Section */
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #BCD9A0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4cae4c;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #BCD9A0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+
+	
+}
